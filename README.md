@@ -1,3 +1,3 @@
 # Street-lights-recognizer
 
-Using Open-cv library https://opencv.org/
+Using OpenCV library https://opencv.org/
