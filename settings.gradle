@@ -1,0 +1,3 @@
+include ':app'
+rootProject.name='Street Lights'
+include ':openCVLibrary345'
