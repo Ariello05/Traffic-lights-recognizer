@@ -3,6 +3,7 @@ package com.example.streetlights
 
 import android.os.Bundle
 import android.os.Environment
+import android.util.Log
 import android.view.SurfaceView
 import android.view.View
 import android.widget.Toast
@@ -153,10 +154,10 @@ class MainActivity : AppCompatActivity() , CameraBridgeViewBase.CvCameraViewList
                         box.tl(),
                         Core.FONT_HERSHEY_SIMPLEX,
                         2.0,
-                        Scalar(255.0, 255.0, 0.0),
+                        scalars[idGuy],
                         2
                     )
-                    Imgproc.rectangle(frame, box.tl(), box.br(), Scalar(255.0, 0.0, 0.0), 2)
+                    Imgproc.rectangle(frame, box.tl(), box.br(), scalars[idGuy], 4)
                 }
 
 
@@ -213,5 +214,14 @@ class MainActivity : AppCompatActivity() , CameraBridgeViewBase.CvCameraViewList
         "red_right",
         "red_left",
         "yellow_light"
+    )
+    private val scalars: MutableList<Scalar> = arrayListOf(
+        Scalar(0.0,255.0,100.0),
+        Scalar(0.0,255.0,100.0),
+        Scalar(0.0,255.0,100.0),
+        Scalar(255.0,0.0,10.0),
+        Scalar(255.0,0.0,10.0),
+        Scalar(255.0,0.0,10.0),
+        Scalar(255.0,255.0,10.0)
     )
 }
