@@ -1,5 +1,7 @@
 # Street-lights-recognizer
-Yolo prepared in this [project](https://github.com/Ariello05/Colab-yolov3-example)
+Yolo prepared in this [project](https://github.com/Ariello05/Colab-yolov3-example).
+
+* CURRENTLY THIS PROJECT HAS REALLY LOW FPS ON LOW-MID MOBILE PHONES SO BE AWARE
 
 Using OpenCV library https://opencv.org/
 
